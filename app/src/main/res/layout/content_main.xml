@@ -33,4 +33,12 @@
         android:text="Kwee Teck yyds"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="170dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="293dp"
+        android:layout_height="313dp"
+        app:srcCompat="@drawable/lironghao"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="211dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
