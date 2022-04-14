@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,6 +40,14 @@
         android:layout_width="293dp"
         android:layout_height="313dp"
         app:srcCompat="@drawable/lironghao"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="211dp" />
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="-70dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="184dp"
+        android:layout_height="178dp"
+        app:srcCompat="@drawable/kazuha"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="310dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
