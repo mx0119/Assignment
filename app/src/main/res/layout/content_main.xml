@@ -25,4 +25,12 @@
         android:text="gaylou"
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kwee Teck yyds"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="170dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
