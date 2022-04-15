@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val database =
-            Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
         val myRef = database.getReference("user")
 
         myRef.setValue("Hello, World!")
@@ -49,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                val value = snapshot.getValue<String>()
+                val value = snapshot.getValue()
                 Log.d(ContentValues.TAG, "Value is: " + value)
             }
 
