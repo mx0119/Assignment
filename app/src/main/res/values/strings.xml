@@ -49,4 +49,8 @@
     <string name="editPassword">Enter your new password</string>
     <string name="confirmEditPass">Confirm your new password</string>
     <string name="str_subscription">Subscription</string>
+    <string name="faqView">FAQs</string>
+    <string name="aboutMeHint">About yourself</string>
+    <string name="aboutMeTitle">Bio</string>
+    <string name="editBio">Enter your bio</string>
 </resources>

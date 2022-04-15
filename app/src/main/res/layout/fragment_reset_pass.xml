@@ -16,7 +16,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="@string/resetText"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backToLogin2" />
@@ -28,14 +28,18 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:background="#32ffffff"
         android:ems="10"
         android:hint="@string/newpassHint"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="#424242"
+        android:textColorHint="#4E342E"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetPageText" />
+        app:layout_constraintTop_toBottomOf="@+id/resetPageText"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/confrimNewPass"
@@ -44,14 +48,18 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:background="#32ffffff"
         android:ems="10"
         android:hint="@string/conNewPassHint"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="#424242"
+        android:textColorHint="#4E342E"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newPass" />
+        app:layout_constraintTop_toBottomOf="@+id/newPass"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="10dp"/>
 
     <Button
         android:id="@+id/submitNewPass"
@@ -60,11 +68,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
-        android:textColor="#FBC02D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confrimNewPass"
-        tools:text="@string/submitNewPass" />
+        tools:text="@string/submitNewPass"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
 
     <Button
         android:id="@+id/backToLogin2"
@@ -73,9 +82,23 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="100dp"
         android:text="@string/backToLogin"
-        android:textColor="#FBC02D"
         app:layout_constraintEnd_toStartOf="@+id/resetPageText"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/small_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

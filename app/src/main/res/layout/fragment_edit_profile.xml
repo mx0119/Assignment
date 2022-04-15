@@ -9,7 +9,7 @@
     tools:context=".ui.Profile.EditProfile" >
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/editProfilePic"
         android:layout_width="106dp"
         android:layout_height="107dp"
         android:layout_marginStart="8dp"
@@ -30,7 +30,11 @@
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/editProfilePic"
+        android:background="#32ffffff"
+        android:textColor="#4E342E"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="10dp" />
 
     <EditText
         android:id="@+id/editPhone"
@@ -43,9 +47,14 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="Phone Number"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/editUserName"
+        android:background="#32ffffff"
+        android:textColor="#4E342E"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/editHeight"
@@ -58,9 +67,12 @@
         android:hint="@string/editHeight"
         android:inputType="textPersonName"
         android:text="Height"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/editWeight"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editPhone"
+        android:background="#32ffffff"
+        android:textColor="#4E342E"/>
 
     <EditText
         android:id="@+id/editWeight"
@@ -72,24 +84,32 @@
         android:hint="@string/editWeight"
         android:inputType="textPersonName"
         android:text="Weight"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editHeight"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/editPhone"
+        android:background="#32ffffff"
+        android:textColor="#4E342E"/>
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
+        android:background="#32ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="@string/editPassword"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColorHint="#4E342E"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
+        tools:layout_editor_absoluteY="507dp" />
 
     <EditText
         android:id="@+id/confirmEditPassword"
@@ -102,9 +122,14 @@
         android:hint="@string/confirmEditPass"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        android:background="#32ffffff"
+        android:textColorHint="#4E342E"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="10dp"/>
 
     <Button
         android:id="@+id/confirmEditButton"
@@ -116,7 +141,9 @@
         android:text="@string/submitNewPass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmEditPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/confirmEditPassword"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
 
     <Button
         android:id="@+id/cancelEditButton"
@@ -129,5 +156,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
+
+    <EditText
+        android:id="@+id/editBio"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:background="#32ffffff"
+        android:drawableLeft="@drawable/ic_baseline_emoji_emotions_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Bio"
+        android:textColor="#4E342E"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

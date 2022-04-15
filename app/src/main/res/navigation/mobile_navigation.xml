@@ -28,4 +28,13 @@
         android:name="com.example.assignment.ui.payment.SubscriptionFragment"
         android:label="@string/str_subscription"
         tools:layout="@layout/fragment_subscription" />
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.assignment.ui.Login.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

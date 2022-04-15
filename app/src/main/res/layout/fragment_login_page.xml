@@ -17,6 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:background="#32ffffff"
         android:ems="10"
         android:hint="@string/userHint"
         android:inputType="textPersonName"
@@ -24,7 +25,10 @@
         android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="10dp"
+        />
 
     <TextView
         android:id="@+id/loginText"
@@ -48,11 +52,12 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:text="@string/signInButton"
-        android:textColor="#FBC02D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/material_dynamic_neutral100"/>
 
     <EditText
         android:id="@+id/enterPassword"
@@ -69,7 +74,11 @@
         android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/enterUserName"
+        android:background="#32ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        />
 
     <CheckBox
         android:id="@+id/checkToRemember"
@@ -134,5 +143,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alternativeConnect"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/small_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
