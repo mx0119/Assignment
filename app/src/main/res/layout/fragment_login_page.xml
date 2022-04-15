@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/container"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
@@ -7,21 +8,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.Login.LoginPage">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/container"
-        android:orientation="vertical"></LinearLayout>
-
     <EditText
         android:id="@+id/enterUserName"
 
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:layout_width="196dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/userHint"
         android:inputType="textPersonName"
@@ -62,9 +57,11 @@
     <EditText
         android:id="@+id/enterPassword"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:layout_width="196dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/passHint"
         android:inputType="textPassword"

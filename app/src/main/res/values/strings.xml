@@ -13,7 +13,7 @@
     <string name="login_text">Login</string>
     <string name="userHint">User Name</string>
     <string name="passHint">Password</string>
-    <string name="rememberMe">RememberMe</string>
+    <string name="rememberMe">Remember me</string>
     <string name="forgetP">Forget your password?</string>
     <string name="signInButton">Sign In</string>
     <string name="alternative">Or Connect With:</string>
@@ -28,4 +28,24 @@
     <string name="newpassHint">New password</string>
     <string name="conNewPassHint">Confirm new password</string>
     <string name="submitNewPass">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userNameHint">User Name</string>
+    <string name="enterEmailHint">Email Address</string>
+    <string name="phoneNumberHint">Phone Number</string>
+    <string name="heightHint">Height (CM)</string>
+    <string name="weightHint">Weight (KG)</string>
+    <string name="confirmPassHint">Confirm password</string>
+    <string name="buttonSignUp">Sign Up</string>
+    <string name="alrMemberText">Already a member? Sign In here</string>
+    <string name="certificate">Please upload your certificate of authentification to register as a coach.</string>
+    <string name="certificateHint">Upload your certificate here</string>
+    <string name="submitCertButton">Submit</string>
+    <string name="signOutText">Sign Out</string>
+    <string name="editNewEmail">Enter new email</string>
+    <string name="editPhone">Enter your new phone number</string>
+    <string name="editHeight">New height</string>
+    <string name="editWeight">New weight</string>
+    <string name="editPassword">Enter your new password</string>
+    <string name="confirmEditPass">Confirm your new password</string>
 </resources>
