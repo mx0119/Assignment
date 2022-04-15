@@ -1,6 +1,7 @@
 package com.example.assignment
 
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -33,7 +34,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        val database =
+            Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
         val myRef = database.getReference("user")
 
         myRef.setValue("Hello, World!")
@@ -49,11 +51,11 @@ class MainActivity : AppCompatActivity() {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 val value = snapshot.getValue()
-                Log.d(ContentValues.TAG, "Value is: " + value)
+                Log.d(TAG, "Value is: " + value)
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
+                Log.w(TAG, "Failed to read value.", error.toException())
             }
 
         })
