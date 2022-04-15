@@ -14,9 +14,9 @@
         android:orientation="vertical"></LinearLayout>
 
     <EditText
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-
         android:id="@+id/enterUserName"
+
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -26,6 +26,7 @@
         android:hint="@string/userHint"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginText" />
@@ -52,14 +53,15 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:text="@string/signInButton"
+        android:textColor="#FBC02D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
 
     <EditText
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:id="@+id/enterPassword"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -67,6 +69,7 @@
         android:hint="@string/passHint"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterUserName" />
@@ -90,6 +93,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/forgetP"
+        android:textColor="#4E342E"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkToRemember"
@@ -103,6 +107,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="@string/signUpText"
+        android:textColor="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/googleConnect" />
@@ -115,6 +120,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="8dp"
         android:text="@string/alternative"
+        android:textColor="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />

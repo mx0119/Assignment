@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.Forget.ForgetPass" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/container"
+        android:orientation="horizontal"></LinearLayout>
+
     <TextView
         android:id="@+id/ForgetPageView"
         android:layout_width="wrap_content"
@@ -29,13 +35,14 @@
         android:layout_marginEnd="8dp"
         android:text="@string/emailText"
         android:textAlignment="center"
+        android:textColor="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ForgetPageView" />
 
     <EditText
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:id="@+id/acceptEmail"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -43,6 +50,7 @@
         android:hint="@string/emailHint"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
@@ -55,6 +63,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="@string/sendLink"
+        android:textColor="#FBC02D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acceptEmail" />
@@ -79,6 +88,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="298dp"
         android:text="@string/backToLogin"
+        android:textColor="#FBC02D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
