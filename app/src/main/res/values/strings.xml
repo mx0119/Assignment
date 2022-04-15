@@ -28,4 +28,7 @@
     <string name="newpassHint">New password</string>
     <string name="conNewPassHint">Confirm new password</string>
     <string name="submitNewPass">Submit</string>
+
+    <string name="test">test</string>
+    <string name="str_subscription">Subscription</string>
 </resources>
