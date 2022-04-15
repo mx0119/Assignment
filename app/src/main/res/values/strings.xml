@@ -48,4 +48,5 @@
     <string name="editWeight">New weight</string>
     <string name="editPassword">Enter your new password</string>
     <string name="confirmEditPass">Confirm your new password</string>
+    <string name="str_subscription">Subscription</string>
 </resources>
